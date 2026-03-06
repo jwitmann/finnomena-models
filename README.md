@@ -1,6 +1,7 @@
 # finnomena-models
 
 [![Go Reference](https://pkg.go.dev/badge/github.com/jwitmann/finnomena-models.svg)](https://pkg.go.dev/github.com/jwitmann/finnomena-models)
+[![Go Report Card](https://goreportcard.com/badge/github.com/jwitmann/finnomena-models)](https://goreportcard.com/report/github.com/jwitmann/finnomena-models)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 Go data types for the [Finnomena.com](https://www.finnomena.com) Thai mutual fund API.
