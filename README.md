@@ -1,29 +1,36 @@
-# finnomena-models
+# DEPRECATED — finnomena-models
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/jwitmann/finnomena-models.svg)](https://pkg.go.dev/github.com/jwitmann/finnomena-models)
-[![Go Report Card](https://goreportcard.com/badge/github.com/jwitmann/finnomena-models?t=1)](https://goreportcard.com/report/github.com/jwitmann/finnomena-models)
+> **This repository is deprecated and no longer maintained.**
+>
+> The types have been merged into [finnomena-go](https://github.com/jwitmann/finnomena-go) as a subpackage.
+>
+> **Migrate to:** `github.com/jwitmann/finnomena-go/models`
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 Go data types for the [Finnomena.com](https://www.finnomena.com) Thai mutual fund API.
 
-This is a supporting package for [finnomena-go](https://github.com/jwitmann/finnomena-go) containing all the data structures needed to work with the Finnomena API.
+This package was a supporting library for [finnomena-go](https://github.com/jwitmann/finnomena-go). As of the merge, all types live in the `models` subpackage of `finnomena-go`.
 
-## Installation
+## Migration
 
-```bash
-go get github.com/jwitmann/finnomena-models
-```
-
-## Usage
+Update your import path:
 
 ```go
+// Before
 import "github.com/jwitmann/finnomena-models"
 
-fund := models.Fund{
-    FundID:    "F000001",
-    ShortCode: "TEST-A",
-    NameTH:    "Test Fund",
-}
+// After
+import "github.com/jwitmann/finnomena-go/models"
+```
+
+All type names remain identical (`models.Fund`, `models.BarsResponse`, etc.).
+
+## Installation (Legacy — Do Not Use)
+
+```bash
+# Do not install this deprecated package
+go get github.com/jwitmann/finnomena-go/models
 ```
 
 ## Types

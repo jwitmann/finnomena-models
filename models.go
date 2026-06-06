@@ -1,3 +1,5 @@
+// Deprecated: This package has been merged into github.com/jwitmann/finnomena-go/models.
+// Use that import path instead. This module is no longer maintained.
 package models
 
 import (
